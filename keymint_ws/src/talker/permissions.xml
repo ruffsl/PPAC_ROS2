@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+    <permissions>
+        <grant name="talker">
+            <allow_rule>
+                <ros_publish>
+                    <ros_topics>
+                        <ros_topic>/chatter</ros_topic>
+                    </ros_topics>
+                </ros_publish>
+                <ros_publish>
+                    <ros_topics>
+                        <ros_topic>/parameter_events</ros_topic>
+                    </ros_topics>
+                </ros_publish>
+                <ros_subscribe>
+                    <ros_topics>
+                        <ros_topic>/parameter_events</ros_topic>
+                    </ros_topics>
+                </ros_subscribe>
+                <ros_subscribe>
+                    <ros_topics>
+                        <ros_topic>/clock</ros_topic>
+                    </ros_topics>
+                </ros_subscribe>
+                <ros_call>
+                    <ros_services>
+                        <ros_service>/talker/set_parameters</ros_service>
+                    </ros_services>
+                </ros_call>
+                <ros_call>
+                    <ros_services>
+                        <ros_service>/talker/get_parameters</ros_service>
+                    </ros_services>
+                </ros_call>
+                <ros_call>
+                    <ros_services>
+                        <ros_service>/talker/get_parameter_types</ros_service>
+                    </ros_services>
+                </ros_call>
+                <ros_call>
+                    <ros_services>
+                        <ros_service>/talker/list_parameters</ros_service>
+                    </ros_services>
+                </ros_call>
+                <ros_call>
+                    <ros_services>
+                        <ros_service>/talker/describe_parameters</ros_service>
+                    </ros_services>
+                </ros_call>
+            </allow_rule>
+            <default>DENY</default>
+        </grant>
+    </permissions>
+</package>

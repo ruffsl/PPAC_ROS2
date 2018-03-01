@@ -1,0 +1,177 @@
+MIME-Version: 1.0
+Content-Type: multipart/signed; protocol="application/x-pkcs7-signature"; micalg="sha-256"; boundary="----B84B763DF8E66D663701A2ECB325434C"
+
+This is an S/MIME signed message
+
+------B84B763DF8E66D663701A2ECB325434C
+<?xml version="1.0" encoding="utf-8"?>
+<dds>
+    <permissions>
+        <grant name="listener">
+            <subject_name>CN=listener</subject_name>
+            <validity>
+                <not_before>2013-10-26T00:00:00</not_before>
+                <not_after>2023-10-26T22:45:30</not_after>
+            </validity>
+            <allow_rule>
+                <domains>
+                    <id>0</id>
+                </domains>
+                <subscribe>
+                    <topics>
+                        <topic>chatter</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rt</partition>
+                    </partitions>
+                </subscribe>
+                <publish>
+                    <topics>
+                        <topic>parameter_events</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rt</partition>
+                    </partitions>
+                </publish>
+                <subscribe>
+                    <topics>
+                        <topic>parameter_events</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rt</partition>
+                    </partitions>
+                </subscribe>
+                <subscribe>
+                    <topics>
+                        <topic>clock</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rt</partition>
+                    </partitions>
+                </subscribe>
+                <publish>
+                    <topics>
+                        <topic>get_parameter_typesRequest</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rq/listener</partition>
+                    </partitions>
+                </publish>
+                <subscribe>
+                    <topics>
+                        <topic>get_parameter_typesReply</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rr/listener</partition>
+                    </partitions>
+                </subscribe>
+                <publish>
+                    <topics>
+                        <topic>list_parametersRequest</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rq/listener</partition>
+                    </partitions>
+                </publish>
+                <subscribe>
+                    <topics>
+                        <topic>list_parametersReply</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rr/listener</partition>
+                    </partitions>
+                </subscribe>
+                <publish>
+                    <topics>
+                        <topic>describe_parametersRequest</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rq/listener</partition>
+                    </partitions>
+                </publish>
+                <subscribe>
+                    <topics>
+                        <topic>describe_parametersReply</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rr/listener</partition>
+                    </partitions>
+                </subscribe>
+                <publish>
+                    <topics>
+                        <topic>set_parametersRequest</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rq/listener</partition>
+                    </partitions>
+                </publish>
+                <subscribe>
+                    <topics>
+                        <topic>set_parametersReply</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rr/listener</partition>
+                    </partitions>
+                </subscribe>
+                <publish>
+                    <topics>
+                        <topic>get_parametersRequest</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rq/listener</partition>
+                    </partitions>
+                </publish>
+                <subscribe>
+                    <topics>
+                        <topic>get_parametersReply</topic>
+                    </topics>
+                    <partitions>
+                        <partition>rr/listener</partition>
+                    </partitions>
+                </subscribe>
+            </allow_rule>
+            <default>DENY</default>
+        </grant>
+    </permissions>
+</dds>
+
+------B84B763DF8E66D663701A2ECB325434C
+Content-Type: application/x-pkcs7-signature; name="smime.p7s"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIIFzwYJKoZIhvcNAQcCoIIFwDCCBbwCAQExDzANBglghkgBZQMEAgEFADALBgkq
+hkiG9w0BBwGgggMnMIIDIzCCAgugAwIBAgIBATANBgkqhkiG9w0BAQsFADBVMQsw
+CQYDVQQGEwJVUzEdMBsGCSqGSIb3DQEJARYOYWNtZUBhY21lLmFjbWUxCzAJBgNV
+BAgMAkNBMQswCQYDVQQDDAJjYTENMAsGA1UECgwEQWNtZTAeFw0xMzEwMjYwMDAw
+MDBaFw0yMzEwMjYyMjQ1MzBaMFUxCzAJBgNVBAYTAlVTMR0wGwYJKoZIhvcNAQkB
+Fg5hY21lQGFjbWUuYWNtZTELMAkGA1UECAwCQ0ExCzAJBgNVBAMMAmNhMQ0wCwYD
+VQQKDARBY21lMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAymL9iois
+Js+yvy1ARmSF1aisZmLquzqdVSdzMdN/4VRTJ0qTR8barK6I41x/Q2+ic99fFGvU
+ypK0B+0fsG+dhB6gHnewY7Vq1SCmz9k4jGZlUTvJP+Vbhb2AJbB9LcPaSfzhRkDm
+2Xf8LhWWAbwWYAqjGUrd8m30DJT/+a+mLQjzy/UvJ9TxWTYKdymT7BXAv5s9g006
+/AP6lWN5r1JM6YA4s1Jlj79aa/RqQRjPlvp2Z2k9HiwDP41nw4gHgIowkFcrNTWL
+rFHNqFP0Wf1yfFIb2TXVcB47OPQ0SJqGtJLdWobDPEIx5dmCT9SezedSBxmJxA7N
+qplApiQg4NikRwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCvofx8WHhf8DfsiueX
+/y57aRppSuKm1AwLC7S+6zvBWN7xzTYQrKckJjUmHIEx3KY5srJ7f3euViuCKb9Z
+W3ZTeMpr0+IqBCDbsiWRuidXtAynD23tR+2T2xsk8aFbsnPiGYojQUc+0RZoRM1j
+XWVdNPAt/OieVU+sIijD+OJmmsmanqJrw+dDDsHjAqa3W1IleHx1uHrenMznwEW8
+JgyM9I7fwsqKr16zBPa0pjRE3IjXUMik7wPDRjZCSfrV4wY3IJUEuzLFsRCXIZXa
+9PWeCpBfVGwQXLU+KQ9LG0T5VB+DlItesF6BiEbw9mnkjXD1CUw1d0/LYOYCXYfo
+BjedMYICbDCCAmgCAQEwWjBVMQswCQYDVQQGEwJVUzEdMBsGCSqGSIb3DQEJARYO
+YWNtZUBhY21lLmFjbWUxCzAJBgNVBAgMAkNBMQswCQYDVQQDDAJjYTENMAsGA1UE
+CgwEQWNtZQIBATANBglghkgBZQMEAgEFAKCB5DAYBgkqhkiG9w0BCQMxCwYJKoZI
+hvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xODAzMDEwNjQ0MzlaMC8GCSqGSIb3DQEJ
+BDEiBCAl12+sQHP3chIUXo+aSb+rkG4ghF5eRLhfHvLQw6zXCDB5BgkqhkiG9w0B
+CQ8xbDBqMAsGCWCGSAFlAwQBKjALBglghkgBZQMEARYwCwYJYIZIAWUDBAECMAoG
+CCqGSIb3DQMHMA4GCCqGSIb3DQMCAgIAgDANBggqhkiG9w0DAgIBQDAHBgUrDgMC
+BzANBggqhkiG9w0DAgIBKDANBgkqhkiG9w0BAQEFAASCAQDIRfAm0jJGqiNhl8HV
+m+866xhNtVbSN4eqXMmFLRgi8VaBSohzpx8h7llr+vw7Pe/M8SUemXQlTWRZOvjh
+eQV6/hG3pXXQFBpXtanKwIUOMalCPfpJU0hHWXBiTf8UjWyxqZlXuur1ehkmlNzy
+Lp7mE1gsDVa7qg7yOF1/Q7afeIqG65Zov//VBH4h4HgyBJcnORaF1VZ61/73igTz
+Qt2VP1YxdWzG10CpJzeP2UfeT/BkJiChvEbOWDkFvKRDcZDBCg3qVXpdB3+ocIUD
+fAnOG29TIVqCozZrL0BJx21Rv+amW5eW/Tm+V0FGOeHE9ppn51XoVTkNtstddAJ3
+S8IS
+
+------B84B763DF8E66D663701A2ECB325434C--
+

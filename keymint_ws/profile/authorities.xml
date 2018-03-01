@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+    <authorities>
+        <authority name="ca">
+            <cert>
+                <serial_number>1</serial_number>
+                <issuer_name></issuer_name>
+            </cert>
+        </authority>
+    </authorities>
+</profile>
